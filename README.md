@@ -8,7 +8,7 @@ conda env create -f environment.yaml
 conda activate MAHENet
 ```
 ### Download pre-trained model
-[download here](https://drive.google.com/file/d/1KbW3mG2Pz9ieXKotFQJ52YNNG8eBCNko/view?usp=sharing)
+[download here](https://drive.google.com/file/d/1KbW3mG2Pz9ieXKotFQJ52YNNG8eBCNko/view?usp=sharing){:height="70%" width="70%"}
 ### Inference
 ```
 python inference.py --jit_path MAHENet_model.pt --image_folder dataset/images --output_folder dataset/results
