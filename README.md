@@ -1,8 +1,7 @@
 <h1 align="center">MAHENet: Object Material Perception via Multi-Scale Feature Fusion and Multi-Supervision Optimization</h1>
 
 <p align="center">
-Dapeng Chen, Juncheng Lou, Hao Wu, Lina Wei, Chengcheng Hua, and Jia Liu∗<br>
-Nanjing University of Information Science and Technology
+ 
 </p>
 
 ---
