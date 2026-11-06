@@ -1,0 +1,62 @@
+{
+  "release_status": "preview",
+  "weights": [
+    {
+      "name": "mahenet_dms37.pth",
+      "stage": "mahenet",
+      "bytes": 285573386,
+      "sha256": "216698dc63224547a13d85a4398279503df7d6616fe54cd597c9cd4827998ebc",
+      "selected_epoch": 12,
+      "validation_metrics": {
+        "miou": 0.6230154945508023,
+        "pacc": 0.8421679199192784,
+        "macc": 0.7319605592238226,
+        "bf1": 0.7254216330421333
+      },
+      "model_state_exact": true,
+      "source_checkpoint_sha256": "15fcc027767359c497a07dec65872b2ac8fbda6594105bb0eb482963e2e3b25a",
+      "url": "https://github.com/monstuff/MAHENet/releases/download/v0.1.0-preview/mahenet_dms37.pth",
+      "asset_api_url": "https://api.github.com/repos/monstuff/MAHENet/releases/assets/717152009"
+    },
+    {
+      "name": "global_branch.pth",
+      "stage": "global",
+      "bytes": 142683606,
+      "sha256": "0e01f1d9edff11f215b0be3b92cc726c801bcb07a88182f4109e570b9eb64eef",
+      "selected_epoch": 17,
+      "validation_metrics": {
+        "miou": 0.6003400551651293,
+        "pacc": 0.82936603704068,
+        "macc": 0.7209620851944758,
+        "bf1": 0.6886133093631726
+      },
+      "model_state_exact": true,
+      "source_checkpoint_sha256": "a6f3705522ea0932cbe2c580d7fe8075c20d9de44efaa3c31d1f502ff243a89d",
+      "url": "https://github.com/monstuff/MAHENet/releases/download/v0.1.0-preview/global_branch.pth",
+      "asset_api_url": "https://api.github.com/repos/monstuff/MAHENet/releases/assets/717153412"
+    },
+    {
+      "name": "local_expert.pth",
+      "stage": "expert",
+      "bytes": 142683263,
+      "sha256": "83e47198db12a148890cf8da87baaa64808c0cc218f36f8bd6af76bcf992406b",
+      "selected_epoch": 19,
+      "validation_metrics": {
+        "miou": 0.6073534724675138,
+        "pacc": 0.8333459825829673,
+        "macc": 0.7249891959187824,
+        "bf1": 0.6946467708553187
+      },
+      "model_state_exact": true,
+      "source_checkpoint_sha256": "39aceda2e6af94a95c7294487bb5a13ea5fef38c0ab8f79f3c6163236ebcd66f",
+      "url": "https://github.com/monstuff/MAHENet/releases/download/v0.1.0-preview/local_expert.pth",
+      "asset_api_url": "https://api.github.com/repos/monstuff/MAHENet/releases/assets/717154617"
+    }
+  ],
+  "encoder": {
+    "name": "encoder_imagenet.pth",
+    "url": "https://github.com/MzeroMiko/VMamba/releases/download/%23v2cls/vssm1_tiny_0230s_ckpt_epoch_264.pth",
+    "sha256": "d855b57224a652bc692804932f88dc3a39b9028e64be99f745a7fd6792ca672a",
+    "bytes": 121094026
+  }
+}

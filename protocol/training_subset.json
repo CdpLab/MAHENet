@@ -1,0 +1,7 @@
+{
+  "rule": "int(sha256(filename).hexdigest()[:8],16)%10 != 0",
+  "input_split": "train",
+  "full_training_images": 18873,
+  "adaptation_and_expert_images": 16968,
+  "selector_reserved_images": 1905
+}

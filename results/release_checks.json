@@ -1,0 +1,49 @@
+{
+  "cpu_model_state_identity": {
+    "state_tensors": 816,
+    "parameters": 71314974,
+    "strict_state_load": true,
+    "all_state_tensors_equal": true,
+    "gpu_forward_tested": false,
+    "selected_epoch": 12,
+    "time_unix": 1793962232.4350286
+  },
+  "cpu_seeded_initialization_identity": {
+    "all_initialization_tensors_equal": true,
+    "state_tensors": 403,
+    "seed": 3407,
+    "training_initialization_preserved": true
+  },
+  "preprocessing_identity": {
+    "checks": [
+      {
+        "stage": "global",
+        "sample_sha256": "521a577a48727aafad3e2cf8f226e99c2c008a482e3c257f3f58cd51ce2f28a2",
+        "images": 18873,
+        "exact_preprocessing_match": true
+      },
+      {
+        "stage": "expert",
+        "sample_sha256": "4ed64d7d0881982cb43320f4890af4e0b10b69b5e1ede73ff75aa4de9e160f59",
+        "images": 16968,
+        "exact_preprocessing_match": true
+      },
+      {
+        "stage": "joint",
+        "sample_sha256": "bbf7240fe35dceda200d497a7b219034194446841c3e18191d869c65c6111710",
+        "images": 16968,
+        "exact_preprocessing_match": true
+      }
+    ],
+    "all_passed": true,
+    "time_unix": 1793968817.704594
+  },
+  "entrypoint_checks_passed": true,
+  "gpu_prediction_identity": {
+    "status": "pending; current authorized training queue has priority"
+  },
+  "independent_clean_environment": {
+    "status": "pending"
+  },
+  "unit_tests_passed": 6
+}

@@ -1,0 +1,17 @@
+{
+  "split": "validation",
+  "selection": "maximum validation mIoU; all four metrics from the same selected checkpoint",
+  "rows": [
+    {
+      "method": "MAHENet",
+      "split": "validation",
+      "selected_epoch": 12,
+      "miou": 0.6230154945508023,
+      "pacc": 0.8421679199192784,
+      "macc": 0.7319605592238226,
+      "bf1": 0.7254216330421333,
+      "real_epochs": 20
+    }
+  ],
+  "heldout_test_results": "pending unified evaluation"
+}

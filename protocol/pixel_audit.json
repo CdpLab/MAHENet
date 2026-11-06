@@ -1,0 +1,462 @@
+{
+  "validation": {
+    "images": 4044,
+    "selected_valid_pixels": 601564010,
+    "parent52_valid_pixels": 605482342,
+    "pixel_coverage_fraction": 0.9935285775848439,
+    "class_support": [
+      {
+        "target_id": 0,
+        "name": "Animal skin",
+        "images_with_class_at512": 88,
+        "pixels_at512": 429322
+      },
+      {
+        "target_id": 1,
+        "name": "Bone/teeth/horn",
+        "images_with_class_at512": 339,
+        "pixels_at512": 71681
+      },
+      {
+        "target_id": 2,
+        "name": "Brickwork",
+        "images_with_class_at512": 129,
+        "pixels_at512": 3143143
+      },
+      {
+        "target_id": 3,
+        "name": "Cardboard",
+        "images_with_class_at512": 306,
+        "pixels_at512": 2362246
+      },
+      {
+        "target_id": 4,
+        "name": "Carpet/rug",
+        "images_with_class_at512": 943,
+        "pixels_at512": 18707201
+      },
+      {
+        "target_id": 5,
+        "name": "Ceiling tile",
+        "images_with_class_at512": 228,
+        "pixels_at512": 5228277
+      },
+      {
+        "target_id": 6,
+        "name": "Ceramic",
+        "images_with_class_at512": 776,
+        "pixels_at512": 4586005
+      },
+      {
+        "target_id": 7,
+        "name": "Chalkboard/blackboard",
+        "images_with_class_at512": 55,
+        "pixels_at512": 1084222
+      },
+      {
+        "target_id": 8,
+        "name": "Concrete",
+        "images_with_class_at512": 239,
+        "pixels_at512": 5919087
+      },
+      {
+        "target_id": 9,
+        "name": "Fabric/cloth",
+        "images_with_class_at512": 2890,
+        "pixels_at512": 85291614
+      },
+      {
+        "target_id": 10,
+        "name": "Foliage",
+        "images_with_class_at512": 982,
+        "pixels_at512": 21242409
+      },
+      {
+        "target_id": 11,
+        "name": "Food",
+        "images_with_class_at512": 285,
+        "pixels_at512": 4390855
+      },
+      {
+        "target_id": 12,
+        "name": "Fur",
+        "images_with_class_at512": 129,
+        "pixels_at512": 3415386
+      },
+      {
+        "target_id": 13,
+        "name": "Glass",
+        "images_with_class_at512": 2663,
+        "pixels_at512": 39905131
+      },
+      {
+        "target_id": 14,
+        "name": "Hair",
+        "images_with_class_at512": 1661,
+        "pixels_at512": 6062207
+      },
+      {
+        "target_id": 15,
+        "name": "Leather",
+        "images_with_class_at512": 712,
+        "pixels_at512": 3696651
+      },
+      {
+        "target_id": 16,
+        "name": "Metal",
+        "images_with_class_at512": 2828,
+        "pixels_at512": 13066961
+      },
+      {
+        "target_id": 17,
+        "name": "Mirror",
+        "images_with_class_at512": 268,
+        "pixels_at512": 4995362
+      },
+      {
+        "target_id": 18,
+        "name": "Paint/plaster/enamel",
+        "images_with_class_at512": 3631,
+        "pixels_at512": 191775789
+      },
+      {
+        "target_id": 19,
+        "name": "Paper",
+        "images_with_class_at512": 1942,
+        "pixels_at512": 15775765
+      },
+      {
+        "target_id": 20,
+        "name": "Photograph/painting",
+        "images_with_class_at512": 424,
+        "pixels_at512": 3095412
+      },
+      {
+        "target_id": 21,
+        "name": "Plastic, clear",
+        "images_with_class_at512": 574,
+        "pixels_at512": 2094720
+      },
+      {
+        "target_id": 22,
+        "name": "Plastic, non-clear",
+        "images_with_class_at512": 2818,
+        "pixels_at512": 23773365
+      },
+      {
+        "target_id": 23,
+        "name": "Rubber/latex",
+        "images_with_class_at512": 734,
+        "pixels_at512": 997119
+      },
+      {
+        "target_id": 24,
+        "name": "Skin/lips",
+        "images_with_class_at512": 1740,
+        "pixels_at512": 9021282
+      },
+      {
+        "target_id": 25,
+        "name": "Sky",
+        "images_with_class_at512": 270,
+        "pixels_at512": 14678415
+      },
+      {
+        "target_id": 26,
+        "name": "Soil/mud",
+        "images_with_class_at512": 146,
+        "pixels_at512": 2347661
+      },
+      {
+        "target_id": 27,
+        "name": "Stone, natural",
+        "images_with_class_at512": 158,
+        "pixels_at512": 5035188
+      },
+      {
+        "target_id": 28,
+        "name": "Stone, polished",
+        "images_with_class_at512": 166,
+        "pixels_at512": 2952669
+      },
+      {
+        "target_id": 29,
+        "name": "Tile",
+        "images_with_class_at512": 975,
+        "pixels_at512": 27392274
+      },
+      {
+        "target_id": 30,
+        "name": "Wallpaper",
+        "images_with_class_at512": 95,
+        "pixels_at512": 4436049
+      },
+      {
+        "target_id": 31,
+        "name": "Water",
+        "images_with_class_at512": 166,
+        "pixels_at512": 8195048
+      },
+      {
+        "target_id": 32,
+        "name": "Wax",
+        "images_with_class_at512": 96,
+        "pixels_at512": 48518
+      },
+      {
+        "target_id": 33,
+        "name": "Whiteboard",
+        "images_with_class_at512": 105,
+        "pixels_at512": 1972033
+      },
+      {
+        "target_id": 34,
+        "name": "Wicker",
+        "images_with_class_at512": 181,
+        "pixels_at512": 1060745
+      },
+      {
+        "target_id": 35,
+        "name": "Wood",
+        "images_with_class_at512": 2239,
+        "pixels_at512": 62411331
+      },
+      {
+        "target_id": 36,
+        "name": "Wood, tree",
+        "images_with_class_at512": 163,
+        "pixels_at512": 902867
+      }
+    ]
+  },
+  "test": {
+    "images": 4047,
+    "selected_valid_pixels": 593565609,
+    "parent52_valid_pixels": 597416774,
+    "pixel_coverage_fraction": 0.9935536376486142,
+    "class_support": [
+      {
+        "target_id": 0,
+        "name": "Animal skin",
+        "images_with_class_at512": 78,
+        "pixels_at512": 383217
+      },
+      {
+        "target_id": 1,
+        "name": "Bone/teeth/horn",
+        "images_with_class_at512": 341,
+        "pixels_at512": 66634
+      },
+      {
+        "target_id": 2,
+        "name": "Brickwork",
+        "images_with_class_at512": 151,
+        "pixels_at512": 3655682
+      },
+      {
+        "target_id": 3,
+        "name": "Cardboard",
+        "images_with_class_at512": 277,
+        "pixels_at512": 2184623
+      },
+      {
+        "target_id": 4,
+        "name": "Carpet/rug",
+        "images_with_class_at512": 884,
+        "pixels_at512": 17584629
+      },
+      {
+        "target_id": 5,
+        "name": "Ceiling tile",
+        "images_with_class_at512": 232,
+        "pixels_at512": 5177849
+      },
+      {
+        "target_id": 6,
+        "name": "Ceramic",
+        "images_with_class_at512": 715,
+        "pixels_at512": 3984207
+      },
+      {
+        "target_id": 7,
+        "name": "Chalkboard/blackboard",
+        "images_with_class_at512": 59,
+        "pixels_at512": 1049209
+      },
+      {
+        "target_id": 8,
+        "name": "Concrete",
+        "images_with_class_at512": 235,
+        "pixels_at512": 6720374
+      },
+      {
+        "target_id": 9,
+        "name": "Fabric/cloth",
+        "images_with_class_at512": 2945,
+        "pixels_at512": 85641881
+      },
+      {
+        "target_id": 10,
+        "name": "Foliage",
+        "images_with_class_at512": 975,
+        "pixels_at512": 19470367
+      },
+      {
+        "target_id": 11,
+        "name": "Food",
+        "images_with_class_at512": 218,
+        "pixels_at512": 4491339
+      },
+      {
+        "target_id": 12,
+        "name": "Fur",
+        "images_with_class_at512": 141,
+        "pixels_at512": 3626277
+      },
+      {
+        "target_id": 13,
+        "name": "Glass",
+        "images_with_class_at512": 2662,
+        "pixels_at512": 36616432
+      },
+      {
+        "target_id": 14,
+        "name": "Hair",
+        "images_with_class_at512": 1674,
+        "pixels_at512": 6345418
+      },
+      {
+        "target_id": 15,
+        "name": "Leather",
+        "images_with_class_at512": 701,
+        "pixels_at512": 3470575
+      },
+      {
+        "target_id": 16,
+        "name": "Metal",
+        "images_with_class_at512": 2799,
+        "pixels_at512": 14017960
+      },
+      {
+        "target_id": 17,
+        "name": "Mirror",
+        "images_with_class_at512": 278,
+        "pixels_at512": 5193115
+      },
+      {
+        "target_id": 18,
+        "name": "Paint/plaster/enamel",
+        "images_with_class_at512": 3625,
+        "pixels_at512": 189393382
+      },
+      {
+        "target_id": 19,
+        "name": "Paper",
+        "images_with_class_at512": 1954,
+        "pixels_at512": 15724887
+      },
+      {
+        "target_id": 20,
+        "name": "Photograph/painting",
+        "images_with_class_at512": 389,
+        "pixels_at512": 2884389
+      },
+      {
+        "target_id": 21,
+        "name": "Plastic, clear",
+        "images_with_class_at512": 568,
+        "pixels_at512": 2042400
+      },
+      {
+        "target_id": 22,
+        "name": "Plastic, non-clear",
+        "images_with_class_at512": 2828,
+        "pixels_at512": 22663650
+      },
+      {
+        "target_id": 23,
+        "name": "Rubber/latex",
+        "images_with_class_at512": 686,
+        "pixels_at512": 1030492
+      },
+      {
+        "target_id": 24,
+        "name": "Skin/lips",
+        "images_with_class_at512": 1740,
+        "pixels_at512": 8974551
+      },
+      {
+        "target_id": 25,
+        "name": "Sky",
+        "images_with_class_at512": 248,
+        "pixels_at512": 15207087
+      },
+      {
+        "target_id": 26,
+        "name": "Soil/mud",
+        "images_with_class_at512": 140,
+        "pixels_at512": 2015001
+      },
+      {
+        "target_id": 27,
+        "name": "Stone, natural",
+        "images_with_class_at512": 154,
+        "pixels_at512": 4638241
+      },
+      {
+        "target_id": 28,
+        "name": "Stone, polished",
+        "images_with_class_at512": 161,
+        "pixels_at512": 3282356
+      },
+      {
+        "target_id": 29,
+        "name": "Tile",
+        "images_with_class_at512": 940,
+        "pixels_at512": 26721471
+      },
+      {
+        "target_id": 30,
+        "name": "Wallpaper",
+        "images_with_class_at512": 85,
+        "pixels_at512": 3556195
+      },
+      {
+        "target_id": 31,
+        "name": "Water",
+        "images_with_class_at512": 172,
+        "pixels_at512": 8453010
+      },
+      {
+        "target_id": 32,
+        "name": "Wax",
+        "images_with_class_at512": 97,
+        "pixels_at512": 93532
+      },
+      {
+        "target_id": 33,
+        "name": "Whiteboard",
+        "images_with_class_at512": 103,
+        "pixels_at512": 1886452
+      },
+      {
+        "target_id": 34,
+        "name": "Wicker",
+        "images_with_class_at512": 153,
+        "pixels_at512": 1030465
+      },
+      {
+        "target_id": 35,
+        "name": "Wood",
+        "images_with_class_at512": 2221,
+        "pixels_at512": 63475732
+      },
+      {
+        "target_id": 36,
+        "name": "Wood, tree",
+        "images_with_class_at512": 128,
+        "pixels_at512": 812528
+      }
+    ]
+  }
+}

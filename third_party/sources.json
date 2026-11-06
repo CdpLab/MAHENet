@@ -1,0 +1,12 @@
+{
+  "VMamba": {
+    "repository": "https://github.com/MzeroMiko/VMamba",
+    "commit": "2ed52ead062a51a64521ed3871d52914bf532876"
+  },
+  "FreqFusion": {
+    "repository": "https://github.com/Linwei-Chen/FreqFusion",
+    "source_sha256": "5852efce406681ce6f3f7763ff8e034cab44f93cb0fdda0114130bc4c8c97e42",
+    "commit": "680b5609ab11f8062a383713793c1f46d2418446",
+    "license_check_status": "upstream license file not available at pinned commit"
+  }
+}

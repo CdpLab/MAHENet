@@ -1,0 +1,109 @@
+[
+  {
+    "step": "environment",
+    "commands": [
+      "python3.10 -m venv .venv",
+      "source .venv/bin/activate",
+      "python -m pip install -r requirements_cuda.txt",
+      "python -m pip install -r requirements.txt",
+      "MMCV_WITH_OPS=1 python -m pip install --no-build-isolation --no-binary=mmcv-full mmcv-full==1.7.2",
+      "python -m pip install --no-build-isolation ./third_party/vmamba/selective_scan",
+      "python tools/check_environment.py"
+    ]
+  },
+  {
+    "step": "data",
+    "commands": [
+      "python tools/prepare_data.py --data-root /path/to/DMS_v1"
+    ],
+    "layout": [
+      "taxonomy.json",
+      "images/train/",
+      "images/validation/",
+      "labels/train/",
+      "labels/validation/"
+    ],
+    "protocol": "protocol/splits.json contains exact relative source paths"
+  },
+  {
+    "step": "weights",
+    "commands": [
+      "python tools/download_weights.py --name all"
+    ],
+    "notes": "Weights are verified by SHA256. Final weights support inference without the three initialization files."
+  },
+  {
+    "step": "inference",
+    "commands": [
+      "python infer.py --checkpoint weights/mahenet_dms37.pth --image /path/to/image.jpg --output predictions/labels.png"
+    ]
+  },
+  {
+    "step": "global_branch_training",
+    "commands": [
+      "torchrun --standalone --nproc_per_node=2 train.py --stage global --data-root /path/to/DMS_v1 --output runs/global",
+      "python tools/export_checkpoint.py --checkpoint runs/global/best.pt --output weights/global_branch.pth"
+    ],
+    "epochs": 20,
+    "training_images": 18873
+  },
+  {
+    "step": "expert_cache",
+    "commands": [
+      "python tools/cache_global.py --data-root /path/to/DMS_v1 --checkpoint weights/global_branch.pth --cache cache"
+    ],
+    "splits": [
+      "train",
+      "validation"
+    ],
+    "selector": "maximum prediction entropy; no label access"
+  },
+  {
+    "step": "expert_branch_training",
+    "commands": [
+      "torchrun --standalone --nproc_per_node=2 train.py --stage expert --data-root /path/to/DMS_v1 --cache cache --output runs/expert",
+      "python tools/export_checkpoint.py --checkpoint runs/expert/best.pt --output weights/local_expert.pth"
+    ],
+    "epochs": 20,
+    "training_images": 16968
+  },
+  {
+    "step": "joint_adaptation",
+    "commands": [
+      "torchrun --standalone --nproc_per_node=2 train.py --stage joint --data-root /path/to/DMS_v1 --output runs/joint"
+    ],
+    "epochs": 20,
+    "head_only_epochs": 2,
+    "joint_epochs": 18,
+    "training_images": 16968
+  },
+  {
+    "step": "resume",
+    "commands": [
+      "torchrun --standalone --nproc_per_node=2 train.py --stage joint --data-root /path/to/DMS_v1 --output runs/joint --resume runs/joint/last.pt"
+    ],
+    "restored": [
+      "model",
+      "optimizer",
+      "scheduler",
+      "per-rank Python/NumPy/Torch/CUDA RNG"
+    ],
+    "note": "CUDA bitwise determinism is not claimed."
+  },
+  {
+    "step": "evaluation",
+    "commands": [
+      "python evaluate.py --checkpoint weights/mahenet_dms37.pth --data-root /path/to/DMS_v1 --split test --output results/dms37_test.json"
+    ],
+    "test_images": 4047,
+    "classes": 37,
+    "metrics": [
+      "mIoU",
+      "PAcc",
+      "mAcc",
+      "BF1"
+    ],
+    "boundary_tolerance_pixels": 2,
+    "checkpoint_selection": "maximum validation mIoU, first epoch on ties"
+  }
+]

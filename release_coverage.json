@@ -1,0 +1,69 @@
+{
+  "reviewer_3_comment_2": {
+    "fixed_split_lists": [
+      "protocol/train.txt",
+      "protocol/validation.txt",
+      "protocol/test.txt",
+      "protocol/splits.json"
+    ],
+    "class_mapping": "protocol/dms37.json",
+    "adaptation_subset": [
+      "protocol/train_adaptation.txt",
+      "protocol/training_subset.json",
+      "tools/prepare_data.py"
+    ],
+    "seed": 3407
+  },
+  "reviewer_3_comment_4": {
+    "model_implementation": [
+      "mahenet/model.py",
+      "mahenet/attention.py",
+      "mahenet/segmenter.py"
+    ],
+    "complete_training_configuration": [
+      "configs/global.json",
+      "configs/expert.json",
+      "configs/mahenet.json"
+    ],
+    "preprocessing": [
+      "mahenet/data_base.py",
+      "mahenet/augmentation.py",
+      "mahenet/data.py",
+      "mahenet/local_data.py"
+    ],
+    "encoder_and_stage_weights": [
+      "weights/manifest.json",
+      "tools/download_weights.py"
+    ],
+    "staged_training_and_resume": [
+      "train.py",
+      "reproduction_commands.json"
+    ],
+    "environment": [
+      "environment.json",
+      "requirements.txt",
+      "requirements_cuda.txt",
+      "tools/check_environment.py"
+    ],
+    "evaluation": [
+      "evaluate.py",
+      "mahenet/metrics.py",
+      "protocol/pixel_audit.json"
+    ],
+    "reported_metrics": [
+      "mIoU",
+      "PAcc",
+      "mAcc",
+      "BF1"
+    ]
+  },
+  "repository": "https://github.com/monstuff/MAHENet",
+  "verification": {
+    "cpu_state_identity": true,
+    "seeded_branch_initialization_identity": true,
+    "gpu_prediction_identity": false,
+    "independent_clean_environment_install": false
+  },
+  "status": "Preview; GPU prediction identity and independent clean-environment installation verification are pending.",
+  "publication_scope": "MAHENet method and reproduction materials explicitly promised in the reviewer response; no baseline or ablation release."
+}
